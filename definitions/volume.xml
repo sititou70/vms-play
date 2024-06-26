@@ -1,0 +1,14 @@
+<volume>
+  <name>vms-play__NUMBER__.qcow2</name>
+  <capacity unit="G">16</capacity>
+
+  <target>
+    <format type='qcow2' />
+    <permissions>
+      <owner>0</owner>
+      <group>0</group>
+      <mode>0600</mode>
+      <label>virt_image_t</label>
+    </permissions>
+  </target>
+</volume>

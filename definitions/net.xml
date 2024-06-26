@@ -1,0 +1,13 @@
+<network>
+  <name>vms-play</name>
+  <forward mode='nat' />
+  <bridge name='virbr70' stp='on' delay='0' />
+  <mac address='02:00:00:00:00:00' />
+  <ip address='192.168.70.1' netmask='255.255.255.0'>
+    <dhcp>
+      <host mac="02:00:00:00:00:01" name="vms-play1" ip="192.168.70.2" />
+      <host mac="02:00:00:00:00:02" name="vms-play2" ip="192.168.70.3" />
+      <host mac="02:00:00:00:00:03" name="vms-play3" ip="192.168.70.4" />
+    </dhcp>
+  </ip>
+</network>
