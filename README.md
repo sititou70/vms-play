@@ -1,7 +1,22 @@
-## install packages
+## setup
 
 ```sh
 sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients aria2
+```
+
+### qemu user setting
+
+```sh
+sudo vim /etc/libvirt/qemu.conf
+```
+
+```text
+user = "root"
+group = "root"
+```
+
+```sh
+sudo systemctl restart libvirtd
 ```
 
 ## base machine
