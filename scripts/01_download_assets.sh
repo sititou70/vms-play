@@ -13,6 +13,6 @@ fi
 [ ! -e TMP_assets ] && mkdir TMP_assets
 cd TMP_assets
 
-aria2c -x5 https://releases.ubuntu.com/24.04/ubuntu-24.04-live-server-amd64.iso
+aria2c -x5 https://releases.ubuntu.com/24.04/ubuntu-24.04.1-live-server-amd64.iso
 
 echo done
